@@ -26,7 +26,7 @@ USERNAME = environ.get('USERNAME', 'https://t.me/triggeredsoul_07ded')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002040878546'))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002166283591').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Movie:Z3xsyG1USv32t70l@cluster0.4ogrr.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Movie:Z3xsyG1USv32t70l@cluster0.4ogrr.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002040878546'))
