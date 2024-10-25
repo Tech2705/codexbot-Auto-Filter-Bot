@@ -21,16 +21,16 @@ def is_enabled(value, default):
 API_ID = int(environ.get('API_ID', ''))
 API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1876329759').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/CodeXBro')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002040878546'))
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002166283591').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Movie:Z3xsyG1USv32t70l@cluster0.4ogrr.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
-QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002040878546'))
+QR_CODE = environ.get('QR_CODE', '')
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
@@ -39,16 +39,16 @@ URL = environ.get('URL', '')
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
-TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/0c-i2Lol6LU")
-TUTORIAL2 = environ.get("TUTORIAL2", "https://youtu.be/GdaUbzxDTKs")
-TUTORIAL3 = environ.get("TUTORIAL3", "https://youtu.be/rddlpYLm0G0")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/A2ZMovieRequesst/15490")
+TUTORIAL2 = environ.get("TUTORIAL2", "https://t.me/A2ZMovieRequesst/15490")
+TUTORIAL3 = environ.get("TUTORIAL3", "https://t.me/A2ZMovieRequesst/15490")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/45a270fc6a0a1c183c614.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "8c09653e5c38f84d1b76ad3197c5a023e53b494d")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "onepagelink.in")
-SHORTENER_API2 = environ.get("SHORTENER_API2", "0c8ebd63bfe9f67f9970b8767498ff60316b9b03")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "tnshort.net")
-SHORTENER_API3 = environ.get("SHORTENER_API3", "9c5a6c96077a1b499d8f953331221159383eb434")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "omegalinks.in")
+SHORTENER_API = environ.get("SHORTENER_API", "4491dd753120960a1c3bf360cf45fae06c2e6eb6")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "ez4short.com")
+SHORTENER_API2 = environ.get("SHORTENER_API2", "4491dd753120960a1c3bf360cf45fae06c2e6eb6")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "ez4short.com")
+SHORTENER_API3 = environ.get("SHORTENER_API3", "4491dd753120960a1c3bf360cf45fae06c2e6eb6")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "4491dd753120960a1c3bf360cf45fae06c2e6eb6")
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "3600"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "21600"))
 
